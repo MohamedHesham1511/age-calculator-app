@@ -1,0 +1,113 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.date-card {
+  border-bottom-right-radius: 6rem !important;
+  width: 50%;
+}
+
+.date-number {
+  color: mediumpurple;
+}
+
+.date-label {
+  margin-bottom: 0.3rem;
+  color: gray;
+  font-size: 0.5rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
+.invalid-input {
+  box-shadow: 0 0 5px red !important;
+}
+
+.invalid-label {
+  color: lightcoral;
+}
+
+.date-validation-message {
+  color: lightcoral;
+  font-size: 0.6rem;
+  font-style: italic;
+}
+
+.form-button {
+  width: 3rem;
+  height: 3rem;
+  background-color: mediumpurple;
+  left: 42%;
+  top: -1.4rem;
+}
+
+.cursor-not-allowed {
+  cursor: not-allowed !important;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 900 !important;
+}
+
+input[type="number"] {
+  min-width: 70px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+input[type="number"]:hover {
+  cursor: pointer;
+}
+
+input[type="number"]:focus {
+  box-shadow: 0 0 5px mediumpurple;
+}
+
+input[type="number"]:focus-visible {
+  outline: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+@media (max-width: 768px) {
+  .date-card {
+    width: 75%;
+  }
+}
+
+@media (max-width: 425px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .date-card {
+    width: 85%;
+  }
+
+  .date-validation-message {
+    font-size: 0.45rem;
+  }
+}
+
+@media (min-width: 574px) {
+  .form-button {
+    width: 3.5rem;
+    height: 3.5rem;
+    top: -1.6rem;
+    left: 89%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .form-button {
+    left: 92%;
+  }
+}
