@@ -1,26 +1,27 @@
-.attribution {
-  font-size: 11px;
-  text-align: center;
+body {
+  font-family: "Poppins";
+  background-color: #f0f0f0;
 }
-.attribution a {
-  color: hsl(228, 45%, 44%);
+
+h1 {
+  font-size: 2.7rem;
+  font-weight: 800 !important;
+  font-style: italic;
+}
+
+p {
+  font-size: 0.7rem;
 }
 
 .date-card {
   border-bottom-right-radius: 6rem !important;
-  width: 50%;
-}
-
-.date-number {
-  color: mediumpurple;
+  width: 90%;
 }
 
 .date-label {
   margin-bottom: 0.3rem;
   color: gray;
-  font-size: 0.5rem;
-  font-weight: 700;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.2rem;
 }
 
 .invalid-input {
@@ -33,25 +34,7 @@
 
 .date-validation-message {
   color: lightcoral;
-  font-size: 0.6rem;
   font-style: italic;
-}
-
-.form-button {
-  width: 3rem;
-  height: 3rem;
-  background-color: mediumpurple;
-  left: 42%;
-  top: -1.4rem;
-}
-
-.cursor-not-allowed {
-  cursor: not-allowed !important;
-}
-
-h1 {
-  font-size: 3.5rem;
-  font-weight: 900 !important;
 }
 
 input[type="number"] {
@@ -77,37 +60,133 @@ input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
 }
 
-@media (max-width: 768px) {
-  .date-card {
-    width: 75%;
-  }
+.horizontal-line {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
-@media (max-width: 425px) {
-  h1 {
-    font-size: 2.5rem;
-  }
+.form-button {
+  width: 3rem;
+  height: 3rem;
+  background-color: mediumpurple;
+  left: 42%;
+  top: -1.4rem;
+}
 
+.SVG-arrow {
+  width: 30px;
+  height: 30px;
+}
+
+.cursor-not-allowed {
+  cursor: not-allowed !important;
+}
+
+.date-number {
+  color: mediumpurple;
+}
+
+.attribution {
+  width: 90%;
+  font-family: cursive;
+  font-size: 0.75rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  font-weight: bold;
+}
+.attribution a:hover {
+  color: hsl(7, 68%, 52%);
+}
+
+@media (min-width: 425px) {
+  .attribution {
+    width: auto;
+  }
+  h1 {
+    font-size: 3.5rem;
+  }
   .date-card {
     width: 85%;
   }
-
-  .date-validation-message {
-    font-size: 0.45rem;
-  }
 }
 
-@media (min-width: 574px) {
+@media (min-width: 768px) {
+  h1 {
+    font-size: 4rem;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+  .date-card {
+    width: 60%;
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+    border-bottom-right-radius: 150px !important;
+  }
+  input[type="number"] {
+    font-size: 1rem;
+  }
   .form-button {
-    width: 3.5rem;
-    height: 3.5rem;
-    top: -1.6rem;
-    left: 89%;
+    width: 4rem;
+    height: 4rem;
+    top: -2rem;
   }
 }
 
 @media (min-width: 1024px) {
+  h1 {
+    font-size: 4.5rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+  .date-card {
+    width: 50%;
+  }
+  .date-form {
+    width: 80%;
+  }
+  input[type="number"] {
+    font-size: 1.4rem;
+  }
+  .horizontal-line {
+    margin-top: 1rem;
+  }
   .form-button {
-    left: 92%;
+    left: 90% !important;
+    width: 4.5rem;
+    height: 4.5rem;
+    top: -2.2rem;
+  }
+  .SVG-arrow {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (min-width: 1439px) {
+  h1 {
+    font-size: 5rem;
+  }
+  .date-card {
+    width: 45%;
+  }
+  input[type="number"] {
+    font-size: 1.5rem;
+    max-width: 8rem;
+  }
+  .form-button {
+    left: 88% !important;
+    width: 5rem;
+    height: 5rem;
+    top: -2.4rem;
+  }
+  .SVG-arrow {
+    width: 50px;
+    height: 50px;
   }
 }
